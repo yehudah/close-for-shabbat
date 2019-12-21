@@ -1,0 +1,65 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "76adffb3e2e3da088370421082953001",
+    "content-hash": "e75ef021ab8c4dceaae94019b0df9206",
+    "packages": [
+        {
+            "name": "rarst/wpdatetime",
+            "version": "0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Rarst/wpdatetime.git",
+                "reference": "ac0db30b0de3834aee87ed6edf5609c2f8771723"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Rarst/wpdatetime/zipball/ac0db30b0de3834aee87ed6edf5609c2f8771723",
+                "reference": "ac0db30b0de3834aee87ed6edf5609c2f8771723",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.10"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.1",
+                "pds/skeleton": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Rarst\\WordPress\\DateTime\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Savchenko",
+                    "homepage": "https://www.Rarst.net/"
+                }
+            ],
+            "description": "Extension of PHP’s DateTime and DateTimeZone classes for WordPress context.",
+            "keywords": [
+                "date",
+                "time",
+                "timezone",
+                "wordpress"
+            ],
+            "time": "2019-11-19 12:27:38"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
