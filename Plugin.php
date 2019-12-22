@@ -85,7 +85,9 @@ class Plugin {
         $close_for_shabbat = Options::get_instance()->get_shabbat_page();
 
         if ( $close_for_shabbat === $post->ID ) {
-            status_header( 503 );
+            header('HTTP/1.1 503 Service Temporarily Unavailable');
+            header('Status: 503 Service Temporarily Unavailable');
+            header('Retry-After: ' . Options::get_instance()->get_retry_after() );
         }
     }
 

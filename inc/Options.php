@@ -55,4 +55,11 @@ class Options {
             );
         }, array_keys($pages->posts), $pages->posts);
     }
+
+    public function get_retry_after() {
+        $shabbat_calc = ShabbatCalc::get_instance();
+        $times = $shabbat_calc->get_times();
+
+        return  $times['finish'] - $shabbat_calc->get_current_time( false );
+    }
 }

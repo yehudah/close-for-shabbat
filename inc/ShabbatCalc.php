@@ -55,7 +55,7 @@ class ShabbatCalc {
     /**
      * @return int
      */
-    public function get_current_time() {
+    public function get_current_time( $add_time = true ) {
         $current_time = current_time( 'timestamp' );
         $dt = $this->get_datetime( $current_time );
         $hour = $dt->format( 'H' );
@@ -65,7 +65,7 @@ class ShabbatCalc {
          * If current time is between 00:00-02:00
          * The sunset will return the previous day sunset
          */
-        if ( absint( $hour ) < 3 ) {
+        if ( absint( $hour ) < 3 && $add_time ) {
             $dt->add(new \DateInterval('PT2H'));
         }
 
